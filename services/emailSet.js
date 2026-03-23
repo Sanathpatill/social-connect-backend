@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
 
 // Send an email using async/await
 const sendEmail = async(to,subject,html)=>{
-  await transporter.sendEmail({
+  await transporter.sendMail({
     from:process.env.USER_PASSWORD,
     to,
     subject,

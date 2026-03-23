@@ -29,7 +29,7 @@ export const registerUser = async(req, res)=>{
 
 
         await sendEmail(email,'welcome to sociaal connect',
-            `<div>welcome to social connect ${item}</div>`
+            `<div>welcome to social connect ${name}</div>`
         )
 
         res.status(201).json({

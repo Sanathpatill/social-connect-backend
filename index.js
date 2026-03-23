@@ -16,7 +16,7 @@ const PORT = process.env.PORT
 app.get("/test",(req,res)=>{
      res.send("hello world")
 })
-console.log(hello)
+
 //middlewear
  app.use("/user",userRouter)
 
